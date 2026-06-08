@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --red: #b30000;
+  --dark: #1f1f1f;
+  --light: #f5f5f5;
+  --white: #ffffff;
+
+  --max-width: 1200px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 70vh;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("asema.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  max-width: var(--max-width);
+
+  margin: auto;
+  padding: 35px 40px;
+  background-color: rgba(31, 31, 31, 0.55);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #a10000;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+  flex: 1;
+
+  width: 100%;
+  max-width: var(--max-width);
+
+  margin: auto;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-logo {
+  width: clamp(100px, 19vw, 200px);
+}
+
+.hero-content h1 {
+  color: white;
+
+  font-size: clamp(2.5rem, 7vw, 5rem);
+
+  font-weight: 800;
+  line-height: 1;
+}
+
+.hero-content p {
+  color: rgba(255,255,255,0.9);
+
+  margin-top: 1rem;
+
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  padding: 5rem 2rem;
+}
+
+.intro {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.intro h2 {
+  color: var(--red);
+
+  margin-bottom: 3rem;
+
+  font-size: clamp(1.8rem, 4vw, 3rem);
+
+  font-weight: 800;
+}
+
+.intro-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 4rem;
+
+  align-items: center;
+}
+
+.intro-text p {
+  margin-bottom: 1.5rem;
+
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+}
+
+.intro-image img {
+  width: 100%;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+
+.footer {
+  background: var(--red);
+
+  color: white;
+
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  flex-wrap: wrap;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 85vh;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .main-content {
+    padding: 3rem 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
