@@ -6,7 +6,7 @@
 
 :root {
 
-  --red: #b30000;
+  --red: #a10000;
   --dark: #1f1f1f;
   --light: #f5f5f5;
   --white: #ffffff;
@@ -34,6 +34,23 @@ body {
 
   display: flex;
   flex-direction: column;
+}
+
+.hero2 {
+  min-height: 35vh;
+  background:
+    url("upperbanner.jpg");
+
+  background-size: cover;
+  background-position: center 75%;
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.hero2 .hero-content {
+  padding: 2.5rem 1rem 1rem;
 }
 
 /* NAVBAR */
@@ -192,6 +209,80 @@ body {
   height: 100%;
 }
 
+.kalusto_intro{
+    background:#1f1f1f;
+    color:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.kalusto_intro h1{
+    color:#a10000;
+    font-size:42px;
+    margin-bottom:35px;
+    letter-spacing:1px;
+}
+
+.kalusto_intro p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.7;
+    font-size:18px;
+}
+
+/* WATERMARK */
+.watermark{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:350px;
+    font-weight:bold;
+    color:rgba(0,0,0,0.04);
+    pointer-events:none;
+    user-select:none;
+}
+
+/* VEHICLES */
+.vehicle-list{
+    max-width:1000px;
+    margin:auto;
+    position:relative;
+    z-index:1;
+}
+
+.vehicle{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-bottom:60px;
+}
+
+.vehicle img{
+    width:420px;
+    max-width:100%;
+    border-radius:4px;
+    display:block;
+}
+
+.vehicle-info{
+    flex:1;
+}
+
+.vehicle-info h3{
+    font-size:28px;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.vehicle-info p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+
+
 /* FOOTER */
 
 .footer {
@@ -237,6 +328,24 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
+
+  .vehicle{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .vehicle img{
+        width:100%;
+    }
+
+    .vehicle-info h3{
+        font-size:24px;
+    }
+
+    .watermark{
+        font-size:180px;
+    }
+
 }
 
 /* MOBILE */
@@ -263,6 +372,23 @@ body {
   .main-content {
     padding: 3rem 1rem;
   }
+
+.vehicle{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .vehicle img{
+        width:100%;
+    }
+
+    .vehicle-info h3{
+        font-size:24px;
+    }
+
+    .watermark{
+        font-size:180px;
+    }
 
   .footer {
     flex-direction: column;
