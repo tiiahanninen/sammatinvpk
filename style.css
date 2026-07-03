@@ -37,7 +37,7 @@ body {
 }
 
 .hero2 {
-  min-height: 35vh;
+  min-height: 17vh;
   background:
     url("img/upperbanner.jpg");
 
@@ -256,8 +256,8 @@ body {
     line-height:1.7;
 }
 
-/* OSASTO INTRO */
-.osasto_intro{
+/* HALYTYSOSASTO INTRO */
+.halytysosasto_intro{
     background:var(--dark);
     color:var(--white);
     padding:50px 100px;
@@ -267,37 +267,37 @@ body {
     text-align:left;
 }
 
-.osasto_intro .image img{
-    max-width:400px;
+.halytysosasto_intro .image img{
+    max-width:300px;
     display:block;
     margin-left:auto;
     border-radius:12px;
 }
 
-.osasto_intro h1{
+.halytysosasto_intro h1{
     color:var(--white);
     font-size:42px;
     margin-bottom:35px;
     letter-spacing:1px;
 }
-.osasto_intro h2{
+.halytysosasto_intro h2{
     color:var(--red);
     font-size:30px;
     margin-bottom:20px;
     letter-spacing:1px;
 }
 
-.osasto_intro p{
+.halytysosasto_intro p{
     max-width:900px;
     margin:0 0 16px;
     line-height:1.7;
     font-size:18px;
 }
 
-/* OSASTO CONTENT */
-.osasto_content{
+/* HALYTYSOSASTO CONTENT */
+.halytysosasto_content{
     display:grid;
-    grid-template-columns:8fr 20fr;
+    grid-template-columns:2fr 6fr;
     padding:60px;
     gap:60px;
     color:var(--dark);
@@ -310,7 +310,7 @@ body {
 }
 
 .left img{
-    max-width:300px;
+    max-width:350px;
     max-height:100%;
 }
 
@@ -328,13 +328,131 @@ body {
     margin-bottom:25px;
 }
 
-.shield{
+.vaakuna{
     position:absolute;
     inset:0;
     background:url("svpk_logo.svg") center no-repeat;
-    background-size: 100% ;
+    background-size: 80% ;
     opacity:.08;
     pointer-events:none;
+}
+
+/* NUORISO-OSASTO INTRO */
+.nuorisoosasto_intro{
+    background:var(--light);
+    color:var(--dark);
+    padding:50px 100px;
+    display:flex;
+    align-items:center;
+    gap:60px;
+    text-align:left;
+}
+
+.nuorisoosasto_intro .image img{
+    max-width:300px;
+    display:block;
+    margin-left:auto;
+    border-radius:12px;
+}
+
+.nuorisoosasto_intro h1{
+    color:var(--dark);
+    font-size:42px;
+    margin-bottom:35px;
+    letter-spacing:1px;
+}
+
+.nuorisoosasto_intro h2{
+    color:var(--red);
+    font-size:30px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.nuorisoosasto_intro p{
+    max-width:700px;
+    margin:0 0 16px;
+    line-height:1.7;
+    font-size:18px;
+}
+
+/* NUORISO-OSASTO CONTENT */
+.nuorisoosasto_content{
+    background:var(--dark);
+    display:grid;
+    grid-template-columns:10fr 20fr;
+    padding:60px;
+    gap:60px;
+    color:var(--white);
+}
+
+.nos_left{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.nos_left img{
+    max-width:600px;
+    max-height:100%;
+}
+
+.nos_right{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.nos_right h2{
+    color:var(--red);
+    font-size:30px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.nos_right p{
+    font-size:18px;
+    text-align:center;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+/* TUKIOSASTO INTRO */
+.tukiosasto_intro{
+    background:var(--dark);
+    color:var(--white);
+    padding:50px 20px;
+    text-align:center;
+}
+
+.tukiosasto_intro h1{
+    color:var(--white);
+    font-size:42px;
+    margin-bottom:35px;
+    letter-spacing:1px;
+}
+.tukiosasto_intro h2{
+    color:var(--red);
+    font-size:30px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.tukiosasto_intro p{
+    background:var(--dark);
+    color:var(--white);
+    font-size:18px;
+    padding:50px 20px;
+    text-align:center;
+}
+
+/* TUKIOSASTO CONTENT */
+.tukiosasto_content{
+    grid-template-columns:2fr 6fr;
+    padding:60px;
+    gap:60px;
+    color:var(--dark);
 }
 
 /* JOIN */
