@@ -34,10 +34,11 @@ body {
 
   display: flex;
   flex-direction: column;
+  
 }
 
 .hero2 {
-  min-height: 17vh;
+  min-height: 19vh;
   background:
     url("img/upperbanner.jpg");
 
@@ -46,7 +47,6 @@ body {
 
   display: flex;
   flex-direction: column;
-  
 }
 
 .hero2 .hero-content {
@@ -66,6 +66,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .nav-links {
@@ -99,6 +102,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+  position: sticky;
 }
 
 .hero-logo {
@@ -332,9 +336,41 @@ body {
     position:absolute;
     inset:0;
     background:url("svpk_logo.svg") center no-repeat;
-    background-size: 80% ;
+    background-size: 90% ;
     opacity:.08;
     pointer-events:none;
+}
+
+.tukiosasto_vaakuna{
+    position:absolute;
+    inset: 0;
+    background:url("svpk_logo.svg") center no-repeat;
+    background-size: 55% ;
+    opacity:.08;
+    pointer-events:none;
+    margin-top: 18rem;
+}
+
+/* JOIN */
+
+.join{
+    background:var(--dark);
+    color:var(--white);
+    text-align:center;
+    padding:70px 20px;
+}
+
+.join h2{
+    color:var(--red);
+    font-size:30px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.join p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
 }
 
 /* NUORISO-OSASTO INTRO */
@@ -422,8 +458,18 @@ body {
 .tukiosasto_intro{
     background:var(--dark);
     color:var(--white);
-    padding:50px 20px;
-    text-align:center;
+    padding:50px 100px;
+    display:flex;
+    align-items:center;
+    gap:60px;
+    text-align:left;
+}
+
+.tukiosasto_intro .image img{
+    max-width:300px;
+    display:block;
+    margin-left:auto;
+    border-radius:12px;
 }
 
 .tukiosasto_intro h1{
@@ -432,6 +478,7 @@ body {
     margin-bottom:35px;
     letter-spacing:1px;
 }
+
 .tukiosasto_intro h2{
     color:var(--red);
     font-size:30px;
@@ -440,11 +487,10 @@ body {
 }
 
 .tukiosasto_intro p{
-    background:var(--dark);
-    color:var(--white);
+    max-width:700px;
+    margin:0 0 16px;
+    line-height:1.7;
     font-size:18px;
-    padding:50px 20px;
-    text-align:center;
 }
 
 /* TUKIOSASTO CONTENT */
@@ -453,27 +499,86 @@ body {
     padding:60px;
     gap:60px;
     color:var(--dark);
-}
-
-/* JOIN */
-
-.join{
-    background:var(--dark);
-    color:var(--white);
     text-align:center;
-    padding:70px 20px;
 }
 
-.join h2{
+.tukiosasto_content h2{
     color:var(--red);
     font-size:30px;
     margin-bottom:20px;
     letter-spacing:1px;
 }
 
-.join p{
-    max-width:900px;
+.tukiosasto_content p{
+    font-size:18px;
+    text-align:center;
+    line-height:1.6;
+    margin-bottom: 20px;
+}
+
+/* YHTEYSTIEDOT */
+
+.contact{
+    max-width:1100px;
     margin:auto;
+    padding:70px 30px;
+}
+
+.contact h1{
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.contact_left h2{
+    color: var(--red);
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.contact_left p{
+    margin:15px 0;
+    line-height:1.6;
+}
+
+.map iframe{
+    height:350px;
+    width:100%;
+    background:var(--white);
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+}
+
+.members{
+    background:#19211c;
+    color:white;
+    padding:70px 30px;
+}
+
+.members-container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.person{
+    margin-bottom:30px;
+}
+
+.person h3{
+    color:var(--red);
+    margin-bottom:10px;
+}
+
+.account{
+    margin-top:50px;
     font-size:18px;
 }
 
