@@ -12,11 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-
+  </head>
+  <body>
     <!-- HERO -->
     <section class="hero2">
       <nav class="navbar">
-        <ul class="nav-links">
+        <button class="nav-toggle" aria-label="Avaa valikko" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span>
+        </button>
+        <ul id="primary-navigation" class="nav-links">
           <li><a href="index.html">Etusivu</a></li>
           <li><a href="kalusto.html">Kalusto</a></li>
           <li><a href="halytysosasto.html">Hälytysosasto</a></li>
@@ -29,8 +33,7 @@
       <div class="hero-content"></div>
     </section>
   </head>
-</html>
-<body>
+  <body>
     <!-- MAIN -->
     <section class="tukiosasto_intro">
       <div class="text">
@@ -77,6 +80,7 @@
         sammatinvpk@sammatinvpk.fi
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
 

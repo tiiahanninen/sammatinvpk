@@ -11,10 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+  </head>
+  <body>
     <!-- HERO -->
     <section class="hero2">
       <nav class="navbar">
-        <ul class="nav-links">
+        <button class="nav-toggle" aria-label="Avaa valikko" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span>
+        </button>
+        <ul id="primary-navigation" class="nav-links">
           <li><a href="index.html">Etusivu</a></li>
           <li><a href="kalusto.html">Kalusto</a></li>
           <li><a href="halytysosasto.html">Hälytysosasto</a></li>
@@ -64,7 +69,7 @@
               Scania P360<br />
               vm. 2011<br />
               Vettä 10 400 l<br />
-              Vaahdonestettä 600 l
+              Vaahtonestettä 600 l
             </p>
           </div>
         </div>
@@ -106,5 +111,6 @@
         sammatinvpk@sammatinvpk.fi
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
