@@ -165,7 +165,7 @@ body {
 .hero2 {
   min-height: 19vh;
   background:
-    url("img/upperbanner.jpg");
+    url("img/upperbanner.jpeg");
   background-size: cover;
   background-position: center 28%;
   display: flex;
