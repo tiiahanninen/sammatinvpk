@@ -14,26 +14,11 @@
   --max-width: 1200px;
 }
 
-html,
-body {
-  min-height: 100%;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   background: var(--light);
   color: var(--dark);
   line-height: 1.7;
-}
-
-.index-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.index-page main {
-  flex: 1;
 }
 
 /* NAVBAR */
@@ -542,6 +527,14 @@ body {
     letter-spacing:1px;
 }
 
+.nos_right h3{
+    color:var(--red);
+    font-size:30px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+    text-align:center;
+}
+
 .nos_right p{
     font-size:18px;
     text-align:center;
@@ -561,7 +554,7 @@ body {
 }
 
 .tukiosasto_intro .image img{
-    max-width:300px;
+    max-width:600px;
     display:block;
     margin-left:auto;
     border-radius:12px;
